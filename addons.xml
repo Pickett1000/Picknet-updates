@@ -24,12 +24,13 @@
   </extension>
 </addon>
 
-<addon id="repository.picknet" name="Picknet Updates" version="1.0.0" provider-name="Picknet">
+<addon id="repository.picknet" name="Picknet Updates" version="1.0.1" provider-name="Picknet">
   <extension point="xbmc.addon.repository" name="Picknet Updates">
     <dir>
       <info compressed="false">https://pickett1000.github.io/Picknet-updates/addons.xml</info>
       <checksum>https://pickett1000.github.io/Picknet-updates/addons.xml.md5</checksum>
-      <datadir zip="true">https://pickett1000.github.io/Picknet-updates/addons/</datadir>
+      <datadir>https://pickett1000.github.io/Picknet-updates/addons/</datadir>
+      <hashes>false</hashes>
     </dir>
   </extension>
   <extension point="xbmc.addon.metadata">
