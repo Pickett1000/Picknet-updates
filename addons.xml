@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="script.picknet.ui" name="Picknet UI" version="0.2.25" provider-name="Picknet">
+  <requires><import addon="xbmc.python" version="3.0.0"/></requires>
+  <extension point="xbmc.python.script" library="default.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Updateable Picknet entertainment interface</summary>
+    <description lang="en_GB">Poster-first Picknet browsing UI that can be updated without rebuilding Android.</description>
+    <platform>all</platform><license>GPL-2.0-or-later</license>
+  </extension>
+</addon>
+<addon id="plugin.video.picknet" name="Picknet Catalog" version="0.2.3" provider-name="Picknet">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="resources/lib/main.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Picknet discovery, unified search, and platform catalogs</summary>
+    <description lang="en_GB">Provides the built-in Picknet catalog experience using TMDB metadata. Playback providers remain user-installed and separately configured.</description>
+    <platform>all</platform>
+    <license>GPL-2.0-or-later</license>
+  </extension>
+</addon>
+
+<addon id="repository.picknet" name="Picknet Updates" version="1.0.0" provider-name="Picknet">
+  <requires><import addon="xbmc.addon" version="19.0.0"/></requires>
+  <extension point="xbmc.addon.repository" name="Picknet Updates">
+    <dir>
+      <info compressed="false">https://pickett1000.github.io/Picknet-updates/addons.xml</info>
+      <checksum>https://pickett1000.github.io/Picknet-updates/addons.xml.md5</checksum>
+      <datadir zip="true">https://pickett1000.github.io/Picknet-updates/addons/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Online updates for Picknet Kodi add-ons</summary>
+    <description lang="en_GB">Update channel for Picknet UI and Catalog. Requires GitHub Pages publishing to be enabled.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+</addons>
